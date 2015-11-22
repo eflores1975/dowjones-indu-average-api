@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  database: dowjonesindustrialaverage
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: dowjonesindustrialaverage
+
+test:
+  <<: *default
+  database: dowjonesindustrial_test
+
+production:
+  <<: *default
+  database: dowjonesindustrialaverage
