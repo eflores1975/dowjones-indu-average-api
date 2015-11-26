@@ -1,0 +1,20 @@
+
+one: 
+  symbl: MMM
+  coname: 3M
+  price: 158.99
+  change: 0.08
+  changepct: 0.05
+  volume: 2023902
+  changeytd: -3.24
+  lastupdate: now()
+#
+two: 
+  symbl: AXP
+  coname: American Express
+  price: 73.93
+  change: -0.14
+  changepct: -0.19
+  volume: 4983712
+  changeytd: 20.54
+  lastupdate: now()

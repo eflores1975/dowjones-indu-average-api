@@ -12,7 +12,7 @@ class DOWJONESAPI < Grape::API
 	end
 
 	rescue_from ActiveRecord::RecordNotFound do |e|
-		rack_response({ message: e.message + ' with stock ticker ' + p_symbl.to_s})
+		error_response({ message: e.message + ' with stock ticker ' + p_symbl.to_s, status: 404})
 	end
 
 
